@@ -1,0 +1,39 @@
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tToolbar"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_width="match_parent"
+    android:background="?attr/colorPrimary"
+    android:gravity="center_vertical|start"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/appIcon"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/friends_list" />
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="My Social App"/>
+        <!--<ImageView
+            android:layout_marginLeft="100dp"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/logout"
+            android:id="@+id/appLogout"
+            android:layout_gravity="right"/>-->
+    </LinearLayout>
+    <android.support.v7.widget.ActionMenuView
+        android:id="@+id/amvMenu"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+</android.support.v7.widget.Toolbar>

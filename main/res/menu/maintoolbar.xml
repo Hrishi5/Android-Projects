@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/frindlisticon"
+        android:icon="@drawable/friends_list"
+        android:orderInCategory="100"
+        android:title="Friends"
+        app:showAsAction="always">
+
+    </item>
+    <item
+        android:id="@+id/home"
+        android:visible="true"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:title="My Socia App">
+    </item>
+
+    <item
+        android:id="@+id/logout"
+        android:visible="true"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/logout"
+        android:title="close">
+    </item>
+
+</menu>
